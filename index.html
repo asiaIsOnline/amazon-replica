@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+<link rel="stylesheet" href="css\styles.css">
+
+<title>Title</title>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js" defer></script>
+</head>
+
+<body>
+    <!--Creates the container that will hold the content.-->
+    <main class="container-fluid">
+        <!--Creates a row that will contain the max height, 'h-100'.-->
+        <div class="row h-100">
+            <!--Creates 1 central column for the content that takes up the 12 designated columns, 'col-sm-12'. 
+                Column becomes flex container, aligns content vertically and in the center.-->
+            <div class="col-sm-12 d-flex flex-column align-items-center">
+
+                <!--Designates the placeholder image.-->
+                <img class="logo" src="https://via.placeholder.com/103x31" alt="Placeholder Logo">
+                
+                <!--Container for the Sign In Content-->
+                <section class="border sign-in p-4">
+                    <h1>Sign in</h1>
+                    <form>
+                        <!--The Email Portion of the Form-->
+                        <div class="form-group font-weight-bold">
+                            <label for="exampleInputEmail1">Email (phone for mobile accounts)</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1">
+                        </div>
+
+                        <!--The Password Portion of the Form-->
+                        <div class="form-group font-weight-bold">
+                            <span><label for="exampleInputPassword1">Password</label>
+                            <span class="forgot-password float-right"><a class="font-weight-normal" href="https://www.amazon.com/" target="_blank">Forgot Password</a></span>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+
+                        <!--The Continue Button and the 'Need Help?' Link-->
+                        <button type="submit" class="btn btn-primary continue-button">Continue</button><br>
+                        <a class="link-text" href="https://www.amazon.com/" target="_blank">&#11208; Need help?</a>
+                    </form>
+                </section>  
+
+                <section class="d-flex flex-column sign-up">
+                    <small class="new-to-amazon text-muted">New to Amazon?</small>
+                    <button type="submit" class="btn btn-primary create-account-button">Create your Amazon account</button>
+                </section>
+
+                <!--Designates the links at the bottom of the content.-->
+                <footer>
+                    <!--Designates the horizontal rule across the page.-->
+                    <hr>
+                    <div class="footer-links mt-auto p-5">
+                    <!--Designates the copyright links.-->
+                    <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_cou?ie=UTF8&nodeId=508088" target="_blank">Conditions of Use</a>
+                    <a href="https://www.amazon.com/gp/help/customer/display.html/ref=ap_desktop_footer_privacy_notice?ie=UTF8&nodeId=468496" target="_blank">Privacy Notice</a>
+                    <a href="https://www.amazon.com/gp/help/customer/display.html" target="_blank">Help</a> <br>
+                    <br>
+                    </div>
+                    <!--Designates the copyright text.-->
+                    <small class="text-muted align-top">	&#169; 1996-2018, Amazon.com, Inc. or its affiliates</small>
+                    
+                </footer>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

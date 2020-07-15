@@ -1,0 +1,107 @@
+/*All elements get a default auto and block display.*/
+body {
+    width: auto;
+    display: block;
+    margin: auto;
+    font-family: "Amazon Ember",Arial,sans-serif;
+}
+
+/*Logo gets center aligned and due to collapsing margins it gets more margin at the bottom.*/
+.logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 1.5em;
+    margin-bottom: 3em;
+  }
+
+/*Sign in box and sign up text and button are given delcared sizing. */
+
+  h1 {
+      margin-bottom: 0.5em;
+  }
+
+  .sign-in{
+      width: 28em;
+  }
+
+  .sign-up {
+    width: 26em;
+  }
+
+    /*Styles the buttons and changes the link's color when hovered.*/
+    .continue-button {
+        color:#5d4947;
+        background-color: #f0c14b;
+        display: block;
+        width: 100%;
+        border-color: inherit;
+        border-style: outset;
+    }
+
+    .create-account-button {
+        color:#5d4947;
+        background-color: #e7e9ec;
+        border-color: inherit;
+        border-style: outset;
+        margin-bottom: 3.5em;
+    }
+
+    .form-group {
+        font-size: 0.75rem;
+    }
+
+    a:hover {
+        color: #b05b04;
+    }
+
+    /*This styling gives the input text box a darker border.
+    Gives the text form inputs a orange glow instead of blue.*/
+    .form-control {
+        border-style: solid;
+        border-color: #939393;
+        border-width: 0.05em;
+        border-radius: 3px;
+    }
+
+    .form-control:focus {
+        border-color: rgb(231,118,1);
+        box-shadow: 0px 1px 1px rgb(231,118,1, 0.075) inset, 0px 0px 8px rgb(231,118,1, 0.5);
+    }
+
+/*Creates the horizontal lines on either side of the 'New to Amazon?' text . */
+  .new-to-amazon {
+    padding: 2em 2em;
+    overflow: hidden;
+    text-align: center;
+   }
+   .new-to-amazon:before,
+   .new-to-amazon:after {
+    background-color: #333;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+   }
+   .new-to-amazon:before {
+    right: 0.5em;
+    margin-left: -50%;
+   }
+   .new-to-amazon:after {
+    left: 0.5em;
+    margin-right: -50%;
+   }
+
+/*Sets the width of the footer element to 100% so the horizontal rule fits across the screen. 
+  Aligns the links and the text to the center.*/
+footer {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-links a {
+    padding-right: 1.75em;
+    margin-bottom: 0 !important;
+}
